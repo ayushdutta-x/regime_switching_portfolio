@@ -1,0 +1,27 @@
+# Data (reproducible via src/data/fetch_data.py - don't commit raw data)
+data/raw/*.csv
+data/processed/*.csv
+
+# But DO track the folder structure itself
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Results (reproducible via pipeline - don't commit generated outputs)
+results/figures/*.png
+results/metrics/*.csv
+!results/figures/.gitkeep
+!results/metrics/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+venv/
+.venv/
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+*.swp
